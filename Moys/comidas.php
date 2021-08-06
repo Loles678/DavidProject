@@ -1,11 +1,11 @@
 <head>
-    <!-- Required  meta tags -->
+    <!-- Required metad tags  -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    <!-- Bootstrap CSS -->
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-   <title>Los Moys - Bebidas</title>
+   <title>Los Moys - Comida Rápida</title>
  </head>
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/4ddc389f8f.js" crossorigin="anonymous"></script>
@@ -26,8 +26,8 @@ rel="stylesheet"/>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="carrito.php">Carrito de compras</a></li>
                                 <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="bebidas.php">Bebidas!</a></li>
                                 <li><a class="dropdown-item" href="principal.php">Pagina de Inicio!</a></li>
-                                <li><a class="dropdown-item" href="comidas.php">Comida Rápida!</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -44,8 +44,8 @@ rel="stylesheet"/>
         <header class="bg-dark py-5">
             <div class="container px-1 px-lg-1 my-1">
                 <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Bebidas</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Disfruta cada gota!</p>
+                    <h1 class="display-4 fw-bolder">Comida Rápida</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Disfruta cada mordida!</p>
                 </div>
             </div>
         </header>
@@ -60,14 +60,14 @@ rel="stylesheet"/>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" height="300" src="Img/bebida.jpg" alt="..." />
+                            <img class="card-img-top" height="150" src="Img/hot1.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Coca-Cola</h5>
+                                    <h5 class="fw-bolder">Hot-Dog</h5>
                                     <!-- Product price-->
-                                    $25.00
+                                    $20.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -81,12 +81,12 @@ rel="stylesheet"/>
                             <!-- Sale badge-->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
                             <!-- Product image-->
-                            <img class="card-img-top" src="Img/coca2.jpg" alt="..." />
+                            <img class="card-img-top" height="200" src="Img/hot.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Dos Coca-Cola's</h5>
+                                    <h5 class="fw-bolder">Dos Hot-Dog's</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -96,8 +96,8 @@ rel="stylesheet"/>
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    - $40.00
+                                    <span class="text-muted text-decoration-line-through">$40.00</span>
+                                    - $35.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -109,78 +109,149 @@ rel="stylesheet"/>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" height="350" src="Img/xx1.jpg" alt="..." />
+                            <img class="card-img-top" src="Img/papas.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Dos Equis</h5>
+                                    <h5 class="fw-bolder">Papas en gajos</h5>
+                                    <!-- Product price-->
+                                    $40.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="snacks.html">Ver más</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="Img/hamburguesa.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Hamburguesa</h5>
+                                    <!-- Product price-->
+                                    $90.00
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="hamburguesa.html">Ver más</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/PF.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">Papas a la francesa</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
                                     <!-- Product price-->
                                     $45.00
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Espcecial</div>
                             <!-- Product image-->
-                            <img class="card-img-top" height="360" src="Img/corona1.jpg" alt="..." />
+                            <img class="card-img-top" src="Img/HD.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Corona</h5>
+                                    <h5 class="fw-bolder">Hamburguesa doble</h5>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
                                     <!-- Product price-->
-                                    $45.00
+                                    <span class="text-muted text-decoration-line-through">$160.00</span>
+                                    - $140.00
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
                             <!-- Product image-->
-                            <img class="card-img-top" height="360" src="Img/miche1.jfif" alt="..." />
+                            <img class="card-img-top" src="Img/hyhd.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Michelada XX</h5>
+                                    <h5 class="fw-bolder">Paquete 1</h5>
+                                    <h6 class="fw-bolder">Hamburguesa y papas a la francesa</h6>
+                                    <!-- Product reviews-->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$105.00</span>
-                                    - $90.00
+                                    <span class="text-muted text-decoration-line-through">$120.00</span>
+                                    - $100.00
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
                             <!-- Product image-->
-                            <img class="card-img-top" height="360" src="Img/miche2.jpg" alt="..." />
+                            <img class="card-img-top" src="img/pack2.png" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Michelada Corona</h5>
+                                    <h5 class="fw-bolder">Paquete 2</h5>
+                                    <h6 class="fw-bolder">Hamburguesa, papas y cerveza</h6>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$95.00</span>
-                                    - $85.00
+                                    <span class="text-muted text-decoration-line-through">$175.00</span>
+                                    - $145.00
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
                             </div>
                         </div>
                     </div>
