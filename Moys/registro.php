@@ -27,6 +27,7 @@
     <!--Acceso o Login-->
     <!-- login --><?php
 // Include config file
+conexion/conector.php
  
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
