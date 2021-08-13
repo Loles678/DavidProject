@@ -60,71 +60,17 @@ rel="stylesheet"/>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="Img/hyhd.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Paquete 1</h5>
-                                    <h6 class="fw-bolder">Hamburguesa y papas a la francesa</h6>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$120.00</span>
-                                    - $100.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="Img/pack2.png" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Paquete 2</h5>
-                                    <h6 class="fw-bolder">Hamburguesa, papas y cerveza</h6>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$175.00</span>
-                                    - $145.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Especial</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="Img/hot.jpg" alt="..." />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">2 Hotdogs</h5>
+                                    <h5 class="fw-bolder">Hotdog Jumbo</h5>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$40.00</span>
-                                    - $35.00
+                                    <span class="text-muted text-decoration-line-through">$50.00</span>
+                                    - $45.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -136,7 +82,7 @@ rel="stylesheet"/>
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Espcecial</div>
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Especial</div>
                             <!-- Product image-->
                             <img class="card-img-top" src="Img/HD.jpg" alt="..." />
                             <!-- Product details-->
@@ -153,8 +99,8 @@ rel="stylesheet"/>
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$140.00</span>
-                                    $160.00
+                                    <span class="text-muted text-decoration-line-through">$120.00</span>
+                                    $110.00
                                 </div>
                             </div>
                             <!-- Product actions-->
