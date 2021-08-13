@@ -46,10 +46,11 @@ rel="stylesheet"/>
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Los Moy's Restaurant</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Ve las ofertas y el especial del día!</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Ve lo mas pedido por los clientes!</p>
                 </div>
             </div>
         </header>
+<<<<<<< HEAD
         <div class="container-fluid mt-5">
           <div class="row">
             <!--layout izquierdo-->
@@ -60,6 +61,18 @@ rel="stylesheet"/>
                     <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                       <?php
                       $resultado = mysqli_query($link, "SELECT * FROM platillo");
+=======
+    <div class="container-fluid mt-5">
+      <div class="row">
+        <!--layout izquierdo-->
+    </div>
+    <br />
+    <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                  <?php
+                  $resultado = mysqli_query($link, 'SELECT * FROM moys.platillo where cve_plat="Pl_01" or cve_plat="Pl_06" or cve_plat="Pl_07"');
+>>>>>>> 6dbd318aecff99d93cca3f47aafc29cd4c551f77
 
                       if( $resultado ){
 
@@ -69,6 +82,7 @@ rel="stylesheet"/>
                           //Mientras mysqli_fetch_array traiga algo, lo agregamos a una variable temporal
                           while($fila = mysqli_fetch_array( $resultado ) ){
 
+<<<<<<< HEAD
                             //Ahora $fila tiene la primera fila de la consulta, pongamos que tienes
                             //un campo en tu DB llamado NOMBRE, así accederías
                             echo '<div class="col mb-5">
@@ -89,6 +103,23 @@ rel="stylesheet"/>
                                     <!-- Product actions-->
                                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                         <div class="text-center"><a name="carrito" id="'.$fila['cve_plat'].'" class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
+=======
+                        //Ahora $fila tiene la primera fila de la consulta, pongamos que tienes
+                        //un campo en tu DB llamado NOMBRE, así accederías
+                        echo '<div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="'.$fila["img_plat"].'" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">'.$fila['tipo_plat'].'</h5>
+                                        <!-- Product price-->
+                                        '.$fila['prec_platillo'].'
+>>>>>>> 6dbd318aecff99d93cca3f47aafc29cd4c551f77
                                     </div>
                                 </div>
                             </div>';
