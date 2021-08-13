@@ -47,7 +47,7 @@ rel="stylesheet"/>
             <div class="container px-4 px-lg-5 my-5">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder">Los Moy's Restaurant</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Ve las ofertas y el especial del día!</p>
+                    <p class="lead fw-normal text-white-50 mb-0">Ve lo mas pedido por los clientes!</p>
                 </div>
             </div>
         </header>
