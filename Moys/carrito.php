@@ -38,6 +38,40 @@ rel="stylesheet"/>
       <div class="row">
         <!--layout izquierdo-->
     </div>
+    <table class="table table-dark table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Nro. de Orden</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Comprar!</button>
     <br />
     <!--Footer-->
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
