@@ -1,3 +1,5 @@
+<?php require_once 'conexion/conector.php';?>
+<html>
 <head>
     <!-- Required  meta tags -->
     <meta charset="utf-8">
@@ -54,69 +56,56 @@ rel="stylesheet"/>
         <!--layout izquierdo-->
     </div>
     <br />
-        <section class="py-5">
+    <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" height="300" src="Img/bebida.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Coca-Cola</h5>
-                                    <!-- Product price-->
-                                    $15.00
+                  <?php
+                  $resultado = mysqli_query($link, "SELECT * FROM platillo where prec_platillo<26.00");
+
+                  if( $resultado ){
+
+                    //Ahora valida que la consuta haya traido registros
+                    if( mysqli_num_rows( $resultado ) > 0){
+
+                      //Mientras mysqli_fetch_array traiga algo, lo agregamos a una variable temporal
+                      while($fila = mysqli_fetch_array( $resultado ) ){
+
+                        //Ahora $fila tiene la primera fila de la consulta, pongamos que tienes
+                        //un campo en tu DB llamado NOMBRE, así accederías
+                        echo '<div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- Sale badge-->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"></div>
+                                <!-- Product image-->
+                                <img class="card-img-top" src="'.$fila["img_plat"].'" alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">'.$fila['tipo_plat'].'</h5>
+                                        <!-- Product price-->
+                                        '.$fila['prec_platillo'].'
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Agregar al carrito</a></div>
                                 </div>
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" height="350" src="Img/xx1.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Dos Equis</h5>
-                                    <!-- Product price-->
-                                    $20.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" height="360" src="Img/corona1.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Corona</h5>
-                                    <!-- Product price-->
-                                    $20.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
+                        </div>';
+                      }
+
+                    }
+                  }
+                  //cve_plat,tipo_plat,prec_platillo,cost_platillo,img_plat
+
+                  mysqli_close($link);
+
+                   ?>
+
                 </div>
             </div>
+        </section>
     <br />
     <!--Footer-->
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">

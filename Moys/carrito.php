@@ -1,3 +1,5 @@
+<?php require_once 'conexion/conector.php';?>
+<html>
 <head>
     <!-- Required meta tags   -->
     <meta charset="utf-8">
@@ -38,6 +40,48 @@ rel="stylesheet"/>
       <div class="row">
         <!--layout izquierdo-->
     </div>
+    <table class="table table-dark table-striped">
+  <thead>
+  <?php
+  $resultado = mysqli_query($link, 'SELECT tipo_plat,cant_plat,prec_platillo,detalle_orden.id_orden,id_clie
+  FROM moys.detalle_orden,moys.platillo,moys.orden
+  where moys.platillo.cve_plat=moys.detalle_orden.cve_plat
+  and moys.detalle_orden.id_orden=moys.orden.id_orden
+  and moys.orden.id_clie='tempo'');
+  mysqli_close($link);
+  ?>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Nro. de Orden</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Comprar!</button>
     <br />
     <!--Footer-->
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
