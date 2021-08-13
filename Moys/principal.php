@@ -84,8 +84,7 @@ rel="stylesheet"/>
                                         <!-- Product name-->
                                         <h5 class="fw-bolder">'.$fila['tipo_plat'].'</h5>
                                         <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">'.$fila['prec_platillo'].'</span>
-                                        - '.$fila['cost_platillo'].'
+                                        '.$fila['prec_platillo'].'
                                     </div>
                                 </div>
                                 <!-- Product actions-->
