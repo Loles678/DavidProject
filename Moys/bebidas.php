@@ -67,37 +67,7 @@ rel="stylesheet"/>
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Coca-Cola</h5>
                                     <!-- Product price-->
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="Img/coca2.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Dos Coca-Cola's</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    - $40.00
+                                    $15.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -116,7 +86,7 @@ rel="stylesheet"/>
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Dos Equis</h5>
                                     <!-- Product price-->
-                                    $45.00
+                                    $20.00
                                 </div>
                             </div>
                             <!-- Product actions-->
@@ -135,47 +105,7 @@ rel="stylesheet"/>
                                     <!-- Product name-->
                                     <h5 class="fw-bolder">Corona</h5>
                                     <!-- Product price-->
-                                    $45.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" height="360" src="Img/miche1.jfif" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Michelada XX</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$105.00</span>
-                                    - $90.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar!</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" height="360" src="Img/miche2.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Michelada Corona</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$95.00</span>
-                                    - $85.00
+                                    $20.00
                                 </div>
                             </div>
                             <!-- Product actions-->
