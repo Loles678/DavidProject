@@ -134,8 +134,8 @@ rel="stylesheet"/>
            array_carrito[1] ={"cve_plat":cve_platillo,"cont":1}
          }else{
            for (var i = 1; i <= array_carrito.length; i++) {
-             //console.log(array_carrito[i].cve_plat);
-             var plat = array_carrito[i].cve_plat;
+             console.log(array_carrito[i].val());
+             var plat = (array_carrito[i].cve_plat);
              if(plat == cve_platillo){
                var suma = Number.parseInt(array_carrito[i].cont+1);
 

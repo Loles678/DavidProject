@@ -42,14 +42,6 @@ rel="stylesheet"/>
     </div>
     <table class="table table-dark table-striped">
   <thead>
-  <?php
-  $resultado = mysqli_query($link, 'SELECT tipo_plat,cant_plat,prec_platillo,detalle_orden.id_orden,id_clie
-  FROM moys.detalle_orden,moys.platillo,moys.orden
-  where moys.platillo.cve_plat=moys.detalle_orden.cve_plat
-  and moys.detalle_orden.id_orden=moys.orden.id_orden
-  and moys.orden.id_clie='tempo'');
-  mysqli_close($link);
-  ?>
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Precio</th>
@@ -58,27 +50,45 @@ rel="stylesheet"/>
       <th scope="col">Total</th>
     </tr>
   </thead>
+
   <tbody>
-    <tr>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
+
+    <?php
+    //CONSULTA PARA OBTENER ORDENES DEL CLIENTE EN SESION
+    $resultado = mysqli_query($link, 'SELECT tipo_plat,cant_plat,prec_platillo,detalle_orden.id_orden,id_clie
+    FROM moys.detalle_orden,moys.platillo,moys.orden
+    where moys.platillo.cve_plat=moys.detalle_orden.cve_plat
+    and moys.detalle_orden.id_orden=moys.orden.id_orden
+    and moys.orden.id_clie="C_006"');
+
+    if( $resultado ){
+
+      //Ahora valida que la consuta haya traido registros
+      if( mysqli_num_rows( $resultado ) > 0){
+
+        //Mientras mysqli_fetch_array traiga algo, lo agregamos a una variable temporal
+        while($fila = mysqli_fetch_array( $resultado ) ){
+
+          //Ahora $fila tiene la primera fila de la consulta, pongamos que tienes
+          //un campo en tu DB llamado NOMBRE, así accederías
+
+          // CAMPOS DE LA BASE DE DATOS ->> tipo_plat,cant_plat,prec_platillo,detalle_orden.id_orden,id_clie
+          $total = $fila['cant_plat'] *$fila['prec_platillo'];
+          echo '  <tr>
+              <td>'.$fila['tipo_plat'].'</td>
+              <td>$'.$fila['prec_platillo'].'</td>
+              <td>'.$fila['id_orden'].'</td>
+              <td>'.$fila['cant_plat'].'</td>
+              <td>$'.$total.'</td>
+            </tr>';
+        }
+
+      }
+    }
+
+
+    mysqli_close($link);
+    ?>
   </tbody>
 </table>
 <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Comprar!</button>
