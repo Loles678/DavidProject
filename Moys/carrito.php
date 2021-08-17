@@ -74,7 +74,6 @@ rel="stylesheet"/>
 
           // CAMPOS DE LA BASE DE DATOS ->> tipo_plat,cant_plat,prec_platillo,detalle_orden.id_orden,id_clie
 
-
           //Como no existe el campo de total en la bd, debemos calcularlos en base a los datos de la consulta de nuestras ordenes
           $total = $fila['cant_plat'] *$fila['prec_platillo'];
           echo '  <tr>
