@@ -1,4 +1,8 @@
-<?php ?>
+<?php
+if(!isset($_SESSION)){
+  session_start();
+}
+?>
 <!Doctype html>
 <html>
 
@@ -23,7 +27,7 @@
     }
   </style>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="javascript" src="https://server/cookies.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
   <!--<title>Los Moy's - Acceso</title>-->
 </head>
 
@@ -122,7 +126,7 @@
               $('#row_err').html('<div class="alert alert-danger">' + json.msj + '</div>');
             else if(json.status=="200"){
               $('#row_err').html('<div class="alert alert-success">' + json.msj + '</div>');
-              	setTimeout(function(){ window.location = 'principal.php'; },5000);
+              	setTimeout(function(){ window.location.replace = 'principal.php'; },5000);
             }
           },
           error: function(status) {
