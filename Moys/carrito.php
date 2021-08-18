@@ -1,4 +1,4 @@
-<?php require_once 'conexion/conector.php';?>
+<?php require_once 'conexion/conector.php'; session_start();?>
 <html>
 <head>
     <!-- Required meta tags   -->
@@ -42,16 +42,6 @@ rel="stylesheet"/>
     </div>
     <table class="table table-dark table-striped">
   <thead>
-
-  <?php
-  $resultado = mysqli_query($link, 'SELECT tipo_plat,cant_plat,prec_platillo,detalle_orden.id_orden,id_clie
-  FROM moys.detalle_orden,moys.platillo,moys.orden
-  where moys.platillo.cve_plat=moys.detalle_orden.cve_plat
-  and moys.detalle_orden.id_orden=moys.orden.id_orden
-  and moys.orden.id_clie='tempo'');
-  mysqli_close($link);
-  ?>
-
     <tr>
       <th scope="col">Nombre</th>
       <th scope="col">Precio</th>
@@ -69,7 +59,7 @@ rel="stylesheet"/>
     FROM moys.detalle_orden,moys.platillo,moys.orden
     where moys.platillo.cve_plat=moys.detalle_orden.cve_plat
     and moys.detalle_orden.id_orden=moys.orden.id_orden
-    and moys.orden.id_clie="C_006"');
+    and moys.orden.id_clie="'.$_SESSION['id_clien'].'"');
 
     if( $resultado ){
 
